@@ -6,6 +6,7 @@ var dateAtTop = document.querySelector("#currentDay");
 dateAtTop.textContent = m.format("dddd MMM DD, YYYY")
 var currentHour = moment().hour()
 var workHours = [9,10,11,12,13,14,15,16,17]
+
 var loadTime = function() {
     for (let i = 0; i < 9; i++) {
       if (workHours[i] < currentHour) {
@@ -20,4 +21,13 @@ var loadTime = function() {
         
     }
 }
+
+var setTask = function() {
+  document.querySelector("textarea").addEventListener("click", function(event) {
+    const task = document.querySelector("#form-control").value;
+    console.log(event);
+  })
+}
+
+
 loadTime();
