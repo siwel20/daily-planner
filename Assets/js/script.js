@@ -21,17 +21,16 @@ var loadTime = function() {
         
     }
 }
-
+  // need to better understand why this is not working. 
   document.querySelector("button").addEventListener("click", function(e) {
     const task = document.querySelector(".form-control").value;
-    
     let formControl;
     if(localStorage.getItem("formControl") === null) {
       formControl = [];
     } else {
       formControl = JSON.parse(localStorage.getItem("formControl"));
     }
-
+    
     formControl.push(task);
 
     localStorage.setItem("formControl", JSON.stringify(formControl));
