@@ -20,8 +20,7 @@ var loadTime = function() {
       }
         
     }
-}
-  // need to better understand why this is not working. 
+} // I would appreciate any help you, the reviewer, could give as to why the localStorage isn't working as expected. 
   document.querySelector("button").addEventListener("click", function(e) {
     const task = document.querySelector(".form-control").value;
     let formControl;
