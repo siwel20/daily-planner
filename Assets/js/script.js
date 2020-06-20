@@ -21,22 +21,17 @@ var loadTime = function() {
         
     }
 } // I would appreciate any help you, the reviewer, could give as to why the localStorage isn't working as expected. 
-  document.querySelector("button").addEventListener("click", function(e) {
+    document.querySelectorAll('.time-block').forEach(item => {
+    item.addEventListener('click', event => {
+      debugger;
+    //handle click
+    // need to update the const task function to find the value associated with each time slot. 
     const task = document.querySelector(".form-control").value;
-    let formControl;
-    if(localStorage.getItem("formControl") === null) {
-      formControl = [];
-    } else {
-      formControl = JSON.parse(localStorage.getItem("formControl"));
-    }
-    
-    formControl.push(task);
+    var saveButton = event.currentTarget.attributes.id.textContent;
 
-    localStorage.setItem("formControl", JSON.stringify(formControl));
+    localStorage.setItem(saveButton, task);
     console.log(task);
-    console.log(formControl);
-
   })
-
+})
 
 loadTime();
