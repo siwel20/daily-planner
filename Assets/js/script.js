@@ -9,6 +9,9 @@ var workHours = [9,10,11,12,13,14,15,16,17]
 
 var loadTime = function() {
     for (let i = 0; i < 9; i++) {
+      if (localStorage.getItem(i)) {
+        document.getElementById(i).value = localStorage.getItem(i);
+      }
       if (workHours[i] < currentHour) {
         document.getElementById(i).classList.add("bg-secondary");
       }
@@ -20,17 +23,16 @@ var loadTime = function() {
       }
         
     }
-} // I would appreciate any help you, the reviewer, could give as to why the localStorage isn't working as expected. 
+} 
     document.querySelectorAll('.time-block').forEach(item => {
     item.addEventListener('click', event => {
-      debugger;
-    //handle click
-    // need to update the const task function to find the value associated with each time slot. 
-    const task = document.querySelector(".form-control").value;
-    var saveButton = event.currentTarget.attributes.id.textContent;
 
-    localStorage.setItem(saveButton, task);
-    console.log(task);
+    var id = item.getAttribute("data-id");
+  
+    const task = document.getElementById(id).value;
+
+    localStorage.setItem(id, task);
+  
   })
 })
 
