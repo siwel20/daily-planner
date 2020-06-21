@@ -15,4 +15,3 @@ The date and time are based on your systems date and time.
 Furture updates will include the following:
 * Improvement to overall look.
 * Ways to schedule multiple days, weeks, months etc...
-* Fix localStorage bugs so it is working correctly.  
