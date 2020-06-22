@@ -9,7 +9,7 @@ Time is money. This planner will help track the important tasks/projects that ne
 ## Features
 * When a user opens the application, they are greated with daily planner that has the current date. 
 
-![main-page](./assets/images/readme/main-page.PNG)
+![main-page](./Assets/images/readme/main-page.PNG)
 
 * The user is given task slots, in hour increments, from 9 am to 5 pm.
 ** The tasks are color coded based on the time of the day. 
@@ -17,11 +17,11 @@ Time is money. This planner will help track the important tasks/projects that ne
 *** Red represent the current time.
 *** Green represent future time. 
 
-![tasks](./assets/images/readme/tasks.PNG)
+![tasks](./Assets/images/readme/tasks.PNG)
 
 * When the user enters a task, if they hit the corresponding save button, the task will be saved to local storage. The task will then be persistent on the page, until the user removes the task. 
 
-![save-button](./assets/images/readme/save-button.PNG)
+![save-button](./Assets/images/readme/save-button.PNG)
 
 ## Built With
 * HTML
