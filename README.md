@@ -12,10 +12,10 @@ Time is money. This planner will help track the important tasks/projects that ne
 ![main-page](./Assets/images/readme/main-page.PNG)
 
 * The user is given task slots, in hour increments, from 9 am to 5 pm.
-** The tasks are color coded based on the time of the day. 
-*** Gray represents time that has past. 
-*** Red represent the current time.
-*** Green represent future time. 
+* The tasks are color coded based on the time of the day. 
+  * Gray represents time that has past. 
+  * Red represent the current time.
+  * Green represent future time. 
 
 ![tasks](./Assets/images/readme/tasks.PNG)
 
